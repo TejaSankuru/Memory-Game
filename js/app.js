@@ -139,7 +139,7 @@ shuffleDeck();
 
 // Function that checks the score of the player
 function checkScore() {
-	if (moves === 16 || moves === 24
+	if (moves === 6 || moves === 12 || moves === 16 || moves === 24
 		) { removeStar();
 
 	}
