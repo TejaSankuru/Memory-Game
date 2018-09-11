@@ -6,7 +6,7 @@ This project is an amusement game for testing memory and sharpening intellectual
 
 __How to run the game:__
 
-The game can be either downloaded as zip file or cloned from the following link: https://github.com/albertcoder/Memory-Game Once downloaded just open the folder and open the index.html file in your browser. You should be able to play the game right away.
+The game can be either downloaded as zip file or cloned from the following link: https://github.com/TejaSankuru/Memory-Game Once downloaded just open the folder and open the index.html file in your browser. You should be able to play the game right away.
 
 __How to play the game:__
 
