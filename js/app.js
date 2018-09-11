@@ -248,6 +248,7 @@ function resetGame() {
 	resetStars();
 	resetCards();
 	cardsMatched === 0;
+	toggledCards = [];
 }
 
 //Function to reset Clock and Time
