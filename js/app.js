@@ -1,23 +1,10 @@
-/* For completing this challenge project I used the following
- * resources.
- * 1. The webinar youtube video from Udacity content 
- * expert Mike Wales.
- * https://www.youtube.com/watch?time_continue=3680&v=_rUH-sEs68Y
- * 2. The following blogpost series from FEND student
- * leader Matthew Cranford.
- * https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
- * I thank both of you for your help!
- */ 
 
-/*
- * Create a list that holds all of your cards
- */
+//Create a list that holds all of your cards
 var cards = document.querySelectorAll('.card');
 console.log(cards);
 
-/* Let's define a variable for counting moves.
- * We are gonna count the flipping of two cards as one move.
- */
+//Variable for counting moves.
+
 let moves = 0;
 
 // Function to count the moves
@@ -34,7 +21,6 @@ function addMove() {
  *   - add each card's HTML to the page
  */
 
-// Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -159,6 +145,7 @@ function checkScore() {
 	}
 }
 
+//Function to removestars
 function removeStar() {
 	const starList = document.querySelectorAll('.stars li');
 	for (star of starList) {
@@ -169,6 +156,7 @@ function removeStar() {
 	}
 }
 
+//Function to Start Clock
 function startClock() {
 		clockId = setInterval(() => {
 		time++;
@@ -183,6 +171,7 @@ function startClock() {
 	}, 1000);
 }
 
+//Funtion to display Time
 function displayTime() {
 	const clock = document.querySelector('.clock');
 	console.log(clock);
@@ -195,10 +184,12 @@ let time = 0;
 let minutes = 0;
 let seconds = 0;
 
+//Function to Stop Clock
 function stopClock() {
 	clearInterval(clockId);
 }
 
+//Function to addstars
 function getStars() {
 	stars = document.querySelectorAll('.stars li');
 	starCount = 0;
@@ -250,6 +241,7 @@ function resetCards() {
 
 }
 
+//Function to reset the Game
 function resetGame() {
 	resetClockAndTime();
 	resetMoves();
@@ -258,6 +250,7 @@ function resetGame() {
 	cardsMatched === 0;
 }
 
+//Function to reset Clock and Time
 function resetClockAndTime() {
 	stopClock();
 	clockOff = true;
@@ -265,11 +258,13 @@ function resetClockAndTime() {
 	displayTime();
 }
 
+//Function to reset Moves
 function resetMoves() {
 	moves = 0;
 	document.querySelector('.moves').innerHTML = moves;
 }
 
+//Function to resetStars
 function resetStars() {
 	stars = 0;
 	const starList = document.querySelectorAll('.stars li');
@@ -278,6 +273,7 @@ function resetStars() {
 	}
 }
 
+//Function to replay 
 function replayGame() {
 	resetGame();
 	toggleModal();
