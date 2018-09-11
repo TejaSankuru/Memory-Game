@@ -44,7 +44,8 @@ If all cards have been matched an gameOver() function is called which calls anot
 
 __Dependencies:__
 Font Awesome.
-Google Fonts.__
+Google Fonts.
+
 __Resources:__
 For completing this challenge project I used the following resources:
 
