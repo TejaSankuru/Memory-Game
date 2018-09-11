@@ -8,6 +8,10 @@ __How to run the game:__
 
 The game can be either downloaded as zip file or cloned from the following link: https://github.com/TejaSankuru/Memory-Game Once downloaded just open the folder and open the index.html file in your browser. You should be able to play the game right away.
 
+__OR__
+
+Just click simply on <https://tejasankuru.github.io/Memory-Game/> to play the game.
+
 __How to play the game:__
 
 This is a very simple game where you just click any card on the deck which will be flipped and then you flip another card. Once a pair of cards is displayed, it will be hidden automatically after one second. Your job is to find the exact same pair of cards. Once you flip open the exact same cards they will stay open. Keep flipping cards until you find all the pairs and try to use the least number of moves and least time to have a good rating.
