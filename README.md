@@ -53,10 +53,8 @@ __Dependencies:__
 - Google Fonts.
 
 __Resources:__
-For completing this challenge project I used the following resources:
+I refered the below mentioned resource.
 
 The webinar youtube video from Udacity content expert Mike Wales.
 https://www.youtube.com/watch?time_continue=3680&v=_rUH-sEs68Y
 
-The following blogpost series from FEND student leader Matthew Cranford.
-https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
