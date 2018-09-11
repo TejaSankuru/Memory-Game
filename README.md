@@ -53,8 +53,8 @@ All the function names are self-explanatory and additional comments explain the 
 - If all cards have been matched an gameOver() function is called which calls another function stopClock() to stop the clock and then calls writeModalStats() to display a message with the final score.
 
 __Dependencies:__
-- Font Awesome.
-- Google Fonts.
+<Font Awesome>
+<Google Fonts>
 
 __Resources:__
 I refered the below mentioned resource.
