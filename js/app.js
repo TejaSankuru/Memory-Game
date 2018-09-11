@@ -151,7 +151,7 @@ function displayTime() {
 	clock.innerHTML = time;
 }
 
-et clockId;
+let clockId;
 let clockOff = true;
 let time = 0;
 let minutes = 0;
