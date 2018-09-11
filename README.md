@@ -41,3 +41,15 @@ The displayed card is added to an array by the function addToggledCard().
 The two displayed cards are matched by the function checkForMatch().
 
 If all cards have been matched an gameOver() function is called which calls another function stopClock() to stop the clock and then calls writeModalStats() to display a message with the final score.
+
+Dependencies:
+Font Awesome.
+Google Fonts.
+Resources:
+For completing this challenge project I used the following resources:
+
+The webinar youtube video from Udacity content expert Mike Wales.
+https://www.youtube.com/watch?time_continue=3680&v=_rUH-sEs68Y
+
+The following blogpost series from FEND student leader Matthew Cranford.
+https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
