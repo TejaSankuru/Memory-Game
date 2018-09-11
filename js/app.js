@@ -1,9 +1,23 @@
+/* For completing this challenge project I used the following
+ * resources.
+ * 1. The webinar youtube video from Udacity content 
+ * expert Mike Wales.
+ * https://www.youtube.com/watch?time_continue=3680&v=_rUH-sEs68Y
+ * 2. The following blogpost series from FEND student
+ * leader Matthew Cranford.
+ * https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
+ * I thank both of you for your help!
+ */ 
+
 /*
  * Create a list that holds all of your cards
  */
 var cards = document.querySelectorAll('.card');
 console.log(cards);
 
+/* Let's define a variable for counting moves.
+ * We are gonna count the flipping of two cards as one move.
+ */
 let moves = 0;
 
 // Function to count the moves
@@ -13,6 +27,14 @@ function addMove() {
 	movesText.innerHTML = moves;
 }
 
+/*
+ * Display the cards on the page
+ *   - shuffle the list of cards using the provided "shuffle" method below
+ *   - loop through each card and create its HTML
+ *   - add each card's HTML to the page
+ */
+
+// Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -27,6 +49,18 @@ function shuffle(array) {
     return array;
 }
 
+/*
+ * set up the event listener for a card. If a card is clicked:
+ *  - display the card's symbol (put this functionality in another function that you call from this one)
+ *  - add the card to a *list* of "open" cards (put this functionality in another function that you call from this one)
+ *  - if the list already has another card, check to see if the two cards match
+ *    + if the cards do match, lock the cards in the open position (put this functionality in another function that you call from this one)
+ *    + if the cards do not match, remove the cards from the list and hide the card's symbol (put this functionality in another function that you call from this one)
+ *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
+ *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
+ */
+
+// The deck variable holds all the card elements
 let deck = document.querySelector('.deck');
 
 // The array which holds the flipped cards																																																											
@@ -55,6 +89,7 @@ deck.addEventListener('click', event => {
 	}
 });
 
+// Function that validates the user clicks and other conditions
 function isClickValid(clickTarget) {
 	return (
 		clickTarget.classList.contains('card') && 
@@ -80,6 +115,7 @@ function addToggleCard(clickTarget) {
 let cardsMatched = 0;
 const TOTAL_PAIRS = 8;
 
+// Function that checks if the flipped cards are a match
 function checkForMatch() {
 	if (
 		toggledCards[0].firstElementChild.className === 
@@ -103,6 +139,8 @@ function checkForMatch() {
 	}
 }	
 
+
+// Function that shuffles the cards 
 function shuffleDeck() {
 	const cardsToShuffle = Array.from(document.querySelectorAll('.deck li'));
 	const shuffledCards = shuffle(cardsToShuffle);
@@ -198,6 +236,7 @@ document.querySelector('.modal_cancel').addEventListener('click', () => {
 
 
 document.querySelector('.modal_replay').addEventListener('click', replayGame);
+
 
 function resetCards() {
 	const cardsToShuffle = Array.from(document.querySelectorAll('.deck li'));
