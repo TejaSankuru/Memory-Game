@@ -57,7 +57,6 @@ __Dependencies:__
 - Google Fonts.
 
 __Resources:__
-I refered the below mentioned resource.
 
 The webinar youtube video from Udacity content expert Mike Wales.
 https://www.youtube.com/watch?time_continue=3680&v=_rUH-sEs68Y
