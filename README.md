@@ -1,6 +1,5 @@
 # Memory-Game
 
-__Project Review:__
 
 This project is an amusement game for testing memory and sharpening intellectual skills. The player basically has to memorize the card and its location. The game has a 4*4 deck of cards i.e. 16 cards which is 8 pairs of identical twins. Keep locating and displaying until you find all the pairs.
 
